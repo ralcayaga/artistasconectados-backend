@@ -1,5 +1,5 @@
-import { Artista } from "src/models/artistas";
-import { Comentario } from "src/models/comentarios";
+import { Artista } from "./artistas";
+import { Comentario } from "./comentarios";
 
 
 export class Obras {   

@@ -1,4 +1,4 @@
-import { Comentario } from 'src/models/comentarios';
+import { Comentario } from './comentarios';
 
 export class Artista {
   constructor(

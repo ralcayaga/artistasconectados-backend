@@ -2,7 +2,7 @@ import { Artista } from "./artistas";
 import { Comentario } from "./comentarios";
 
 
-export class Obras {   
+export class Obra {   
   constructor(
      public id:number,                 //identificador único de la obra, generado automáticamente
      public ruta: string,              //ruta al archivo de imagen o video de la obra

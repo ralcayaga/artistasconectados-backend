@@ -1,16 +1,16 @@
-import { Comentario } from './comentarios';
+import { Obra } from 'src/models/obras';
 
 export class Artista {
   constructor(
-        public id: number,                  //identificador único de la obra, generado automáticamente
-        public ruta: string,                //ruta al archivo de imagen o video de la obra
-        public descripcion: string,         //descripción de la obra
-        public etiquetas: string[],         //lista de etiquetas asociadas a la obra
-        public fechaSubida: Date,           //fecha en la que se subió la obra
-        public artista: Artista,            //artista que subió la obra
-        public meGusta: Artista[],          //lista de artistas que le han dado "me gusta" a la obra
-        public comentarios: Comentario[]    //lista de comentarios asociados a la obra
-
+    public	nombreArtista: string,  // identificador único del artista
+    public	email: string,          //correo electrónico del artista
+    public	password: string,       //contraseña del artista
+    public	fechaRegistro: Date,    //fecha de creación de la cuenta
+    public	avatar: string,         //ruta a la imagen de perfil del artista
+    public	seguidores: string[],   //artistas que siguen a este artista
+    public	siguiendo: string[],    //artistas que este artista sigue
+    public	obrasSubidas: string[]  //obras que este artista ha subido
+    
 
   ) {}
 }
